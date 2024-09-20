@@ -39,7 +39,7 @@ function clean(un,arr){
   let arra = document.getElementById(arr);
   let text = "";
   for (let i=0;i<un.length;i++) {
-      text += un[i].id +" ";
+      text += un[i].id +", ";
   } 
   arra.innerHTML = text;
 }

@@ -24,15 +24,11 @@ body{
 .fixed{
   position:fixed;
   width:100px;
-  /* left:50%; */
-  /* transform:translate(-50%); */
-  /* border:1px solid white; */
 }
 .bar{
   position:relative;
   overflow-y:hidden;
   padding-top:10px;
-  /* border:1px solid white; */
   text-align:center;
 }
 .body{
@@ -43,4 +39,8 @@ button{
   background-color: rgba(0,0,0,0);
   color:white;
   font-size: 16px;
+}
+hr{
+  margin:10px;
+  border-color: gray;
 }

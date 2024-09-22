@@ -44,3 +44,8 @@ hr{
   margin:10px;
   border-color: gray;
 }
+.lay{
+  margin:5px;
+  padding:5px;
+  border:1px solid gray;
+}

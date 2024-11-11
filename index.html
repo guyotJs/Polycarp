@@ -33,10 +33,10 @@
         <em>Book</em><br/>
         <button click='show = toggle(show);' class="lay">
             <b if="show">Polycarp</b>
-            <span else="show">Polycarp</span>
+            <span if="!show">Polycarp</span>
         </button>
         <button click='show = toggle(show);' class="lay">
-            <b else="show">1 Ignatius</b>
+            <b if="!show">1 Ignatius</b>
             <span if="show">1 Ignatius</span>
         </button>
 

@@ -21,19 +21,23 @@ function getCookie(cname) {
 }
 // Underli holds all underlined vars (pre-cookie)
 let underli = []
-function underline(elem){
-  if(elem.style.textDecoration == "underline"){
-      elem.style.textDecoration = "none";
-      underli.splice(underli.indexOf(elem),1)
-      clean(underli,"arr")
-      jsoSET(underli)
-  }else{
-      elem.style.textDecoration = "underline";
-      underli.push(elem)
-      clean(underli,"arr")
-      jsoSET(underli)
+function underline(elem) {
+  // Target the innerHTML of the button, not the button element
+  if (elem.firstChild && elem.firstChild.tagName === "MARK") {
+      // Unwrap the <mark>
+      const mark = elem.firstChild;
+      elem.innerHTML = mark.innerHTML;
+      underli.splice(underli.indexOf(elem), 1);
+  } else {
+      // Wrap all inner content in <mark>
+      elem.innerHTML = `<mark>${elem.innerHTML}</mark>`;
+      underli.push(elem);
   }
+  clean(underli, "arr");
+  jsoSET(underli);
 }
+
+
 // send each line of a array to html (array, htmlElem)
 function clean(un,arr){
   let arra = document.getElementById(arr);

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+  margin:0;
+  padding:0;
+  font-family: serif;
+}
+body{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-color:#2e2e2e;
+  color:white;
+}
+.⁋{
+  font-size:25px;
+  font-weight:900;
+}
+.container{
+  display:grid;
+  position:relative;
+  grid-template-columns:100px calc(100% - 100px);
+  height: 100%;
+}
+.fixed{
+  position:fixed;
+  width:100px;
+}
+.bar{
+  position:relative;
+  overflow-y:hidden;
+  padding-top:10px;
+  text-align:center;
+}
+.body{
+  padding: 19px;
+}
+button{
+  border: none;
+  background-color: rgba(0,0,0,0);
+  color:white;
+  font-size: 16px;
+}
+hr{
+  margin:10px;
+  border-color: gray;
+}
+.lay{
+  margin:5px;
+  padding:5px;
+  border:1px solid gray;
+}

@@ -59,6 +59,12 @@ body{
   position:relative;
   padding:5px;
 }
+mark{
+  border-radius:2px;
+  padding:2px;
+  background-color: rgba(91, 197, 219, 0.282);
+  color:white;
+}
 .hv{
   padding:5px;
   font-family: sans-serif;

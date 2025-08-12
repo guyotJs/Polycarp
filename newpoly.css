@@ -19,6 +19,7 @@
   font-weight:300;
   line-height: 1.6;
   color:#e0e0e0;
+  text-align: left;
 
 }
 
@@ -32,13 +33,11 @@ body{
   font-size:35px;
   font-weight:400;
 }
-.mm{
-  margin-bottom: 10px;
-}
 .container{
-  display:grid;
+  display:grid!important;
   position:relative;
-  grid-template-columns:100px calc(100% - 100px);
+  margin-left: 10%;margin-right: 10%;
+
   height: 100%;
 }
 .fixed{
@@ -49,15 +48,24 @@ body{
   position:relative;
   overflow-y:hidden;
   padding-top:10px;
-  text-align:center;
 }
 .maya{
+  font-family: sans-serif;
+  /* display: inline-flex; */
   background-color: #252525;
   font-weight:100;
   border: 1px solid #3d3d3d;
   border-radius:100px;
-  position:relative;
+  position:absolute;
   padding:5px;
+  width:90px;
+  margin-top:70px;
+}
+.body{
+  margin-top:80px;
+}
+.secendum{
+  margin-left:100px;
 }
 mark{
   border-radius:2px;
@@ -68,14 +76,12 @@ mark{
 .hv{
   padding:5px;
   font-family: sans-serif;
-
+  text-align: center;
+  font-weight: 500;
 }
 .maya:hover > .hv{
   background-color: #3d3d3d;
   border-radius:100px;
-}
-.body{
-  padding: 19px;
 }
 button:not(.maya){
   border: none;
